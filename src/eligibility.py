@@ -9,17 +9,19 @@ def is_age_eligible(age, min_age=None, max_age=None):
         return False
     return True
 
-def is_income_eligible(income,max_income=None):
+
+def is_income_eligible(income, max_income=None):
     """Return True if income is within the scheme's limit.
-    
+
     max_income=None means the scheme has no income limit."""
-    if max_income is not None and income>max_income:
+    if max_income is not None and income > max_income:
         return False
     return True
 
+
 def is_category_eligible(category, allowed_categories=None):
     """Return True if the user's category is allowed by the scheme.
-    
+
     allowed_categories=None means the scheme is open to every category."""
     if allowed_categories is None:
         return True
