@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "pm-kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "level": "central",
+    "states": null,
+    "type": "farmer",
+    "min_age": null,
+    "max_age": null,
+    "max_income": null,
+    "categories": null,
+    "occupations": ["farmer"],
+    "benefit": "Rs 6,000 per year per eligible farmer family, paid in three instalments of Rs 2,000 by direct bank transfer (DBT).",
+    "documents": [
+      "Aadhaar",
+      "Aadhaar-linked bank account",
+      "Land ownership records",
+      "Mobile number"
+    ],
+    "how_to_apply": "Register online at pmkisan.gov.in (Farmers Corner, New Farmer Registration) or at your nearest Common Service Centre (CSC). e-KYC is required.",
+    "notes": "Only landholding farmer families qualify, and some categories are excluded. Read the full exclusion list on the official site before applying.",
+    "official_link": "https://pmkisan.gov.in/",
+    "last_verified": "2026-11-10"
+  }
+]
