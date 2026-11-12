@@ -21,5 +21,51 @@
     "notes": "Only landholding farmer families qualify, and some categories are excluded. Read the full exclusion list on the official site before applying.",
     "official_link": "https://pmkisan.gov.in/",
     "last_verified": "2026-11-10"
+  },
+  {
+    "id": "pms-sc",
+    "name": "Post Matric Scholarship for Scheduled Caste Students (PMS-SC)",
+    "level": "central",
+    "states": null,
+    "type": "scholarship",
+    "min_age": null,
+    "max_age": null,
+    "max_income": 250000,
+    "categories": ["SC"],
+    "occupations": ["student"],
+    "benefit": "Compulsory non-refundable fees are reimbursed, plus a yearly academic allowance that depends on the course group. For example Rs 13,500 (hosteller) or Rs 7,000 (day scholar) for professional degree and postgraduate courses, and Rs 4,000 or Rs 2,500 for post-Class-X non-degree courses. The allowance is revised every year, so check the current rates.",
+    "documents": [
+      "Aadhaar",
+      "Passport-size photograph",
+      "Certificates of exams passed",
+      "Caste certificate",
+      "Income certificate from the authority set by your state"
+    ],
+    "how_to_apply": "Register for a Freeship Card and apply on the scholarship portal (National Scholarship Portal or your state's portal) with your Aadhaar and course details, on the day of admission.",
+    "notes": "For students of a recognised post-matric course who belong to a Scheduled Caste of their home state. Parents' or guardians' income from all sources in the last financial year must not exceed Rs 2,50,000. A student cannot hold another scholarship at the same time. The income limit may be revised, so check the official site.",
+    "official_link": "https://scholarships.gov.in/",
+    "last_verified": "2026-11-12"
+  },
+  {
+    "id": "pm-sym",
+    "name": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+    "level": "central",
+    "states": null,
+    "type": "pension",
+    "min_age": 18,
+    "max_age": 40,
+    "max_income": 180000,
+    "categories": null,
+    "occupations": ["job"],
+    "benefit": "Minimum assured pension of Rs 3,000 per month after age 60, with 50% as family pension to the spouse. You pay a monthly contribution (Rs 55 at age 18 up to Rs 200 at age 40) and the Central Government pays the same amount.",
+    "documents": [
+      "Aadhaar",
+      "Savings bank or Jan Dhan account",
+      "Mobile number"
+    ],
+    "how_to_apply": "Enrol at your nearest Common Service Centre (CSC) or on the official portal maandhan.in. The first month's contribution is paid in cash at the CSC.",
+    "notes": "For unorganised workers aged 18 to 40 who earn Rs 15,000 or less per month. You must not be covered by NPS, ESIC or EPFO, and must not be an income tax payer. The income limit here is a yearly estimate (Rs 15,000 x 12) of the worker's own income, not family income.",
+    "official_link": "https://labour.gov.in/pm-sym",
+    "last_verified": "2026-11-12"
   }
 ]
