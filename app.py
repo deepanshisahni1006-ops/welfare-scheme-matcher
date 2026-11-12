@@ -1,4 +1,5 @@
 import streamlit as st
+from src.data_loader import load_schemes, schemes_to_table
 
 st.set_page_config(page_title="Welfare Scheme Matcher", page_icon="🇮🇳")
 
@@ -13,3 +14,21 @@ income = st.number_input("Family annual income (in rupees)", min_value=0, value=
 category = st.selectbox("Category", ["General", "OBC", "SC", "ST"])
 
 st.write(f"You entered: age {age}, income Rs {income}, category {category}.")
+
+
+st.header("Schemes in our database")
+
+
+schemes = load_schemes()
+table = schemes_to_table(schemes)
+
+st.dataframe(
+    table[["name", "type", "benefit", "official_link"]],
+    hide_index=True,
+    column_config={
+        "name": "Scheme",
+        "type": "Type",
+        "benefit": "Benefit",
+        "official_link": st.column_config.LinkColumn("Official link"),
+    },
+)
