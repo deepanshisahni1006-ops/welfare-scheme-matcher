@@ -26,3 +26,33 @@ def is_category_eligible(category, allowed_categories=None):
     if allowed_categories is None:
         return True
     return category in allowed_categories
+
+
+def is_state_eligible(state, allowed_states=None):
+    """Return True if the user's state is allowed. None means all India."""
+    if allowed_states is None:
+        return True
+    return state in allowed_states
+
+
+def is_occupation_eligible(occupation, allowed_occupations=None):
+    """Return True if the user's occupation is allowed. None means any occupation."""
+    if allowed_occupations is None:
+        return True
+    return occupation in allowed_occupations
+
+
+def is_eligible(user, scheme):
+    """Return True only if the user passes every rule of the scheme."""
+    return (
+        is_age_eligible(user["age"], scheme.get("min_age"), scheme.get("max_age"))
+        and is_income_eligible(user["income"], scheme.get("max_income"))
+        and is_category_eligible(user["category"], scheme.get("categories"))
+        and is_state_eligible(user["state"], scheme.get("states"))
+        and is_occupation_eligible(user["occupation"], scheme.get("occupations"))
+    )
+
+
+def filter_schemes(user, schemes):
+    """Return only the schemes the user is eligible for."""
+    return [scheme for scheme in schemes if is_eligible(user, scheme)]
